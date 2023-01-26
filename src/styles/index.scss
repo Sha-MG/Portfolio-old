@@ -1,0 +1,22 @@
+@use 'reset';
+@use 'src/styles/vars' as v ;
+
+
+html{
+  scroll-behavior: smooth
+}
+
+body {
+  background-color: v.$white;
+  font-family: v.$title-font;
+  height: 200vw;
+
+}
+
+.backUp{
+
+  color: v.$yellow;
+  transform: scale(2);
+  margin: auto;
+  display: inline-block;
+}

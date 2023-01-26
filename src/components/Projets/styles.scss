@@ -1,0 +1,262 @@
+@use 'src/styles/vars' as v ;
+
+
+// Mixins
+@mixin absCenter {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+@mixin flexCenter {
+ flex-flow: row;
+ align-items: center;
+ justify-content: center;
+}
+
+// Style
+
+.container-projets{
+
+  h2{
+    text-align: center;
+    margin-bottom: 5vw;
+    font-size: 4rem;
+    color: v.$black;
+    text-transform: uppercase;
+
+  }
+
+// La liste qui contient toutes les cartes
+  &--list{
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: auto;
+  }
+
+// Début du style de chaque carte
+  &--cardsboard {
+    display: flex;
+    @include flexCenter;
+    height: 100%;
+    position: relative;    
+    border-radius: 20px;
+    
+    &--card{
+    flex: initial;
+    position: relative;
+    height: 30vw;
+    width: 35vw;
+    -moz-perspective: 200rem;
+    perspective: 200rem;
+
+// ScrollBar personnalisée des cards
+    & ::-webkit-scrollbar-track
+    {
+      background-color: rgba(v.$black, 0.2);
+      border-radius: 2px;
+    }
+
+    & ::-webkit-scrollbar
+    {
+      width: 10px;
+    }
+
+    & ::-webkit-scrollbar-thumb
+    {
+      border-radius: 2px;
+      background-color: rgba(v.$blue, 0.7);
+    }
+
+// Style sur chaque côté
+  &__side {
+    height: 30vw;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 2rem 6rem rgba(v.$black, 0.15);
+
+// Devant des cartes
+  &--front {
+    background-repeat: no-repeat;
+    background-position: cover;
+    border-radius: 20px;
+   
+  }
+
+// Derrière des cartes
+  &--back {
+   overflow-y: scroll;
+   background-color: v.$white;
+   transform: rotateY(180deg);
+   border-radius: 20px 0 0 20px;
+  }
+ }
+
+ &:hover &__side--back {
+  transform: rotateY(0);
+  transform: scale(1.2);
+ }
+ &:hover &__side--front {
+  transform: rotateY(-180deg);
+ }
+
+ 
+ // Côté back des cartes
+ &__cover {
+  position: relative;
+  background-size: cover;
+  height: 14rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: v.$yellow;
+ }
+
+ &__heading {
+  text-align: center;
+  color: v.$white;
+  @include absCenter;
+  width: 75%;
+ }
+
+ &__heading-span {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  color: v.$white;
+ }
+
+  &__containerBouttonGalerie{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+ &__bouttonGalerie{
+
+  background-color: v.$yellow;
+  box-shadow: 3px 3px 1px v.$blue;
+  border: none;
+  transition: all 0.2s ease-in;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 40px;
+
+  &:hover{
+    color: v.$dark-blue;
+    background-color: v.$dark-yellow;
+    box-shadow: 1px 1px 0 v.$blue;
+  }
+ }
+
+ &__details {
+  padding: 4rem 2rem;
+  ul {
+   list-style: none;
+   width: 80%;
+   margin: 0 auto;
+
+   li {
+
+    font-family: v.$global-font;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+
+    &:first-child{
+      text-align: justify;
+    }
+
+    &:not(:last-child) {
+     border-bottom: 1px solid v.$black;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+
+      &:visited{
+        color: inherit;
+      }
+    }
+}}}}
+
+}
+// Modal qui pop pour la galerie de chaque projet
+.modal {
+
+  background-color: rgba(0, 0, 0, 0.5); 
+  transition: 0.5s; 
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &--slider{
+
+    width: 75vw;
+    margin: auto;
+    margin-top: 10vh;
+
+    button{
+      transform: scale(3);
+    }
+
+    .slick-active{
+
+      button::before {
+        color: v.$yellow;
+      }
+    }
+
+  }
+
+  &--bouttonClose{
+
+    background-color: v.$yellow;
+    color: v.$blue;
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    transform: scale(2);
+    box-shadow: 3px 3px 0 v.$dark-blue;
+    border: none;
+    transition: 0.5s;
+
+    &:hover{
+      color: v.$dark-blue;
+      background-color: v.$dark-yellow;
+      box-shadow: 1px 1px 0 v.$blue;
+    }
+  }
+
+  &.open {
+    width: 100%; 
+    height: 100%; 
+    z-index: 5;
+    opacity: 1;
+
+  }
+
+  &.closed {
+    display: none;
+    opacity: 0; 
+  }
+
+}
+}
+

@@ -1,0 +1,44 @@
+@use 'src/styles/vars' as v ;
+
+
+.CompSlider-container{
+  background-color: v.$dark-blue;
+  width: 80%;
+  margin: auto;
+  color: v.$white;
+  text-align: center;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+
+  &--icone{
+    margin-left: 50px;
+    height: 60%;
+    p{
+      margin-top: 30px;
+      font-weight: 300;
+      font-family: v.$global-font;
+      font-size: 1.5em;
+    }
+
+    img{
+      width: 100px;
+      margin: auto;
+    }
+  }
+
+}
+
+.slick-list{
+  justify-content: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: v.$yellow!important;
+  opacity: 1!important;
+  transition: 0.2s;
+
+}
+
+

@@ -1,0 +1,22 @@
+@use 'src/styles/vars' as v ;
+
+.miniMe-container { 
+  grid-area: 1 / 1 / 6 / 3; 
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 0.5fr repeat(2, 1fr);
+  width: 600px;
+  margin-left: 12vh;
+
+  &--image{
+    grid-area: 2 / 2 / 4 / 3;
+    margin: auto;
+    z-index: 0;
+    &--background{
+      grid-area: 1 / 1 / 4 / 4;
+    }
+    &--animation{
+      margin-bottom: 0px;
+    }
+  }
+}

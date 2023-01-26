@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('src/assets/fonts/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+  font-family: 'Playfair Display ExtraBold';
+  src: url('src/assets/fonts/PlayfairDisplay-ExtraBold.ttf');
+}
+
+
+// Generic
+$white: #F5F5F5;
+$yellow: #FEBD59;
+$dark-yellow: #D48115;
+$blue: #3E6B8A;
+$dark-blue: #344B5A;
+$black: #444444;
+$grey: #717171;
+
+// Global
+$global-font: 'Playfair Display', serif;
+$global-font-weight: 300;
+
+// Title
+$title-font: 'Playfair Display ExtraBold', serif;
+$title-font-weight: 500;
+
