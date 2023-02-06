@@ -13,9 +13,9 @@ const AboutMe = () => {
       <a href="#top" className='backUp backUp__aboutme'><i className="fa-solid fa-arrows-up-to-line fa-2xl"></i></a>
       <div className='aboutme--img-container'>
         <img src={dog}/>
-        <img src={jvd}/>
-        <img src={peinture}/>
         <img src={ordi}/>
+        <img src={peinture}/>
+        <img src={jvd}/>
         <img src={unicorn}/>
       </div>
     </div>

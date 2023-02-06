@@ -1,14 +1,4 @@
 export default [
-
-  {
-    name: 'Apothéose',
-    img: '/Img/creperie.png',
-    description:'Ceci est mon projet de fin d\'étude.',
-    technos:['React', 'JavaScript', 'D\'autres trucs'],
-    github:'https://github.com/Sha-MG/creperie',
-    lien:'',
-    galerie:['/Img/creperie.png', '/Img/creperie2.png', '/Img/creperie3.png', '/Img/creperie4.png', '/Img/creperie5.png']
-  },
   {
     name: 'Crêperie',
     img: '/Img/creperie.png',
@@ -17,6 +7,15 @@ export default [
     github:'https://github.com/Sha-MG/creperie',
     lien:'',
     galerie:['/Img/creperie.png', '/Img/creperie2.png', '/Img/creperie3.png', '/Img/creperie4.png', '/Img/creperie5.png']
+  },
+  {
+    name: 'Anime finder',
+    img: '/Img/anime-finder4.png',
+    description:'Projet réalisé dans le cadre d\'un test technique. Ce projet m\'a principalement permis de travailler des nouvelles librairies et une nouvelle API. ',
+    technos:['API', 'React', 'React-Table', 'React-Select'],
+    github:'https://github.com/Sha-MG/Anime-Finder',
+    lien:'https://main--wonderful-souffle-8a2994.netlify.app/',
+    galerie:['/Img/anime-finder.png', '/Img/anime-finder2.png', '/Img/anime-finder3.png']
   },
   {
     name: 'Portfolio',
@@ -28,13 +27,4 @@ export default [
     galerie:['/Img/portfolio.png', '/Img/portfolio2.png']
   },
  
-  {
-    name: 'Projet Perso',
-    img: '/Img/creperie.png',
-    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    technos:['react', 'js', 'truc'],
-    github:'https://github.com/Sha-MG/creperie',
-    lien:'',
-    galerie:['/Img/creperie.png', '/Img/creperie2.png', '/Img/creperie3.png', '/Img/creperie4.png', '/Img/creperie5.png']
-  }
 ];
