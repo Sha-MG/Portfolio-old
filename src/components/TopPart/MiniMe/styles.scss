@@ -12,9 +12,11 @@
     grid-area: 2 / 2 / 4 / 3;
     margin: auto;
     z-index: 0;
+
     &--background{
       grid-area: 1 / 1 / 4 / 4;
     }
+    
     &--animation{
       margin-bottom: 0px;
     }

@@ -1,31 +1,13 @@
 @use 'src/styles/vars' as v ;
-
-
-// Mixins
-@mixin absCenter {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
-}
-
-@mixin flexCenter {
- flex-flow: row;
- align-items: center;
- justify-content: center;
-}
+@import 'src/styles/vars' ;
 
 // Style
 
 .container-projets{
 
   h2{
-    text-align: center;
+    @include titre;
     margin-bottom: 5vw;
-    font-size: 4rem;
-    color: v.$black;
-    text-transform: uppercase;
-
   }
 
 // La liste qui contient toutes les cartes
@@ -49,8 +31,8 @@
     &--card{
     flex: initial;
     position: relative;
-    height: 30vw;
-    width: 35vw;
+    height: 25vw;
+    width: 20vw;
     -moz-perspective: 200rem;
     perspective: 200rem;
 
@@ -88,11 +70,9 @@
 
 // Devant des cartes
   &--front {
-    background-repeat: no-repeat;
-    background-position: cover;
     border-radius: 20px;
-   
   }
+
 
 // Derrière des cartes
   &--back {
@@ -128,11 +108,11 @@
   text-align: center;
   color: v.$white;
   @include absCenter;
-  width: 75%;
+  width: 95%;
  }
 
  &__heading-span {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
   padding: 1rem 1.5rem;
@@ -157,17 +137,15 @@
   margin-top: 40px;
 
   &:hover{
-    color: v.$dark-blue;
     background-color: v.$dark-yellow;
     box-shadow: 1px 1px 0 v.$blue;
   }
  }
 
  &__details {
-  padding: 4rem 2rem;
+
   ul {
    list-style: none;
-   width: 80%;
    margin: 0 auto;
 
    li {
@@ -179,6 +157,7 @@
 
     &:first-child{
       text-align: justify;
+      font-size: 0.9em;
     }
 
     &:not(:last-child) {
@@ -258,5 +237,11 @@
   }
 
 }
+
 }
 
+.portfolio {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}

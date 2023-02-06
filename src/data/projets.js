@@ -20,12 +20,12 @@ export default [
   },
   {
     name: 'Portfolio',
-    img: '/Img/creperie.png',
+    img: '/Img/portfolioLogo.png',
     description:'Et oui, le site sur le quel vous vous trouvez fait partie de mes projets ! J\'y ai particulièrement travailler le design, les animations, et les interactions.',
     technos:['React', 'JavaScript', 'CSS Animations'],
     github:'https://github.com/Sha-MG/Portfolio',
     lien:'test',
-    galerie:['/Img/creperie.png', '/Img/creperie2.png', '/Img/creperie3.png', '/Img/creperie4.png', '/Img/creperie5.png']
+    galerie:['/Img/portfolio.png', '/Img/portfolio2.png']
   },
  
   {

@@ -1,0 +1,36 @@
+@use 'src/styles/vars' as v ;
+@import 'src/styles/vars' ;
+
+.aboutme{
+
+  &--container{
+    background-color: v.$yellow;
+    margin-top: 20vh;
+
+    h2{
+      @include titre;
+      padding: 10vh;
+    }
+  }
+  &--img-container{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    img{
+      padding-top: 15px;
+      width: 18vw;
+      filter: grayscale(80%);
+      transition: 0.2s all ease-in;
+      border-bottom: 5px solid v.$blue;
+
+      &:hover{
+        filter: grayscale(0);
+        border-bottom: 15px solid v.$white;
+        padding-top: 5px;
+        background: linear-gradient(0deg, rgba(v.$white,0.4) 0%, rgba(v.$white,0.2) 20%, rgba(v.$white,0) 60%);
+      }
+    }
+  }
+
+}

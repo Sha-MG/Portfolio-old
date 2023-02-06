@@ -8,9 +8,9 @@ function Projets() {
 
   return (
     <div className='container-projets'>
+      <a href="#top" className='backUp backUp__projets'><i className="fa-solid fa-arrows-up-to-line fa-2xl"></i></a>
       <h2 id='projets'>Projets</h2>
       <div className='container-projets--list'>
-      
       {
           projets.map((projet) => (
             <ProjetsList
@@ -19,9 +19,7 @@ function Projets() {
             />
           ))
         }
-
       </div>
-      <a href="#top"><i className="fa-solid fa-arrows-up-to-line fa-2xl backUp"></i></a>
     </div>
   );
 }

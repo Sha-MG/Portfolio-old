@@ -2,6 +2,7 @@
 import './styles.scss';
 import Presentation from './Presentation'
 import TImeline from './Timeline'
+
 // == Composant
 function BlocParcours() {
   return (

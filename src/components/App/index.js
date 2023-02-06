@@ -3,6 +3,8 @@ import TopPart from "../TopPart";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Parcours from "../Parcours";
 import Projets from "../Projets";
+import AboutMe from "../AboutMe";
+import Contact from "../Contact";
 
 // == Composant
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Parcours/>
       </ParallaxProvider>
       <Projets/>
+      <AboutMe/>
+      <Contact/>
     </>
 
   );

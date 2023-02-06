@@ -7,7 +7,9 @@ import HoverBurst from './hoverBurst';
 function Presentation() {
 
   return (
-    
+
+    <>
+      <a href="#top" className='backUp'><i className="fa-solid fa-arrows-up-to-line fa-2xl"></i></a>
       <div className='BlocParcours-container--presentation'>
         <p>Salut, je m'appelle Morgane, <br/> </p>
         <p> <br/>Je suis officiellement <HoverBurst><strong>développeuse web & mobile</strong></HoverBurst> depuis quelques mois.</p>
@@ -20,6 +22,7 @@ function Presentation() {
       
         <IconesContact/>
       </div>
+    </>
   )
 }
 

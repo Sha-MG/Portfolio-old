@@ -54,7 +54,7 @@ function ProjetsList({name, img, description, technos, github, lien, galerie}) {
           </div>
         </div>
 {/* Les élements du devant de la carte */}
-        <div className="container-projets--cardsboard--card__side container-projets--cardsboard--card__side--front"  style={{backgroundImage:`url(${img})`}}>
+        <div style={{backgroundImage:`url(${img})`}} className={'container-projets--cardsboard--card__side container-projets--cardsboard--card__side--front ' + name.toLowerCase()}>
         </div>
       </div>
     </div>

@@ -15,8 +15,25 @@ body {
 
 .backUp{
 
+  float: left;
   color: v.$yellow;
-  transform: scale(2);
-  margin: auto;
-  display: inline-block;
+  position: relative;
+  top: -200px;
+  left: 50px;
+
+  &__parcours{
+    top: 250px ;
+  }
+  &__projets{
+    top: 0;
+  }
+  i {
+    transform: scale(2);
+  }
+
+  &__aboutme{
+  color: v.$white;
+  top: -100px;
+  }
+
 }

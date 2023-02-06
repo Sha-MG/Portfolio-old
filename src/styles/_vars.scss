@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Playfair Display';
-  src: url('src/assets/fonts/PlayfairDisplay-Regular.ttf');
+  src: url('/src/assets/fonts/PlayfairDisplay-Regular.ttf');
 }
 @font-face {
   font-family: 'Playfair Display ExtraBold';
-  src: url('src/assets/fonts/PlayfairDisplay-ExtraBold.ttf');
+  src: url('/src/assets/fonts/PlayfairDisplay-ExtraBold.ttf');
 }
 
 
@@ -25,3 +25,26 @@ $global-font-weight: 300;
 $title-font: 'Playfair Display ExtraBold', serif;
 $title-font-weight: 500;
 
+// Mixins
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+ 
+ @mixin flexCenter {
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+@mixin titre {
+  font-size: 3em;
+  font-family: $title-font;
+  font-weight: $title-font-weight;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  color: $black;
+}

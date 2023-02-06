@@ -1,0 +1,9 @@
+@use 'src/styles/vars' as v ;
+@import 'src/styles/vars' ;
+
+.contact-container{
+  h2{
+    @include titre;
+    padding : 10vh; 
+  }
+}
