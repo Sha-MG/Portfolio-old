@@ -140,3 +140,35 @@
   }
   
 }
+
+@media (max-device-width : 1024px){
+
+  .BlocParcours-container--presentation{
+
+    width: 100%;
+    padding-top: 5vh;
+    .contactContainer{
+      .wrapper{
+        margin: 2vh 15vh;
+      }
+    }
+  
+    .button-cv{
+      margin: 30px 20vh;
+    }
+  }
+  
+}
+
+@media (max-device-width : 420px){
+  .contactContainer{
+    margin-left: 0;
+
+    .wrapper{
+      margin-left: 0;
+    }
+  }
+  .button-cv{
+    margin-left: 0;
+  }
+  }

@@ -40,8 +40,16 @@ function CompSlider() {
     slidesToShow: 7,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
-
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        }
+      },
+    ]
   };
 
   return (

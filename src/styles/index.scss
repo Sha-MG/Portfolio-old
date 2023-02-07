@@ -68,3 +68,20 @@ body {
   
 
 }
+
+@media (max-device-width : 1024px){
+  .backUp{
+    display: none;
+  }
+}
+
+@media (max-device-width : 420px){
+  body{
+    width: 100vw;
+  }
+  }
+// @media (max-device-width : 740px){
+//   body{
+//     width: 100vw;
+//   }
+// }

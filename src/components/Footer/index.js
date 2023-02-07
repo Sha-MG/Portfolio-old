@@ -6,7 +6,7 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer--left'>
         <p>Portfolio de Morgane Gamory</p>
-        <p>Toutes les illustrations et le code de cette page sont fait maison avec <i class="fa-solid fa-heart"></i>.</p>
+        <p>Toutes les illustrations et le code de cette page sont fait maison avec <i className="fa-solid fa-heart"></i>.</p>
         <p>Tous droits réservés © 2023</p>
       </div>
       <div className='footer--right'>

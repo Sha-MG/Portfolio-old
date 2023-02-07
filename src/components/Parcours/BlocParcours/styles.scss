@@ -15,4 +15,11 @@
     width: 60%;
   }
 
+  @media (max-device-width : 1024px){
+    flex-direction: column;
+    gap: 0;
+    &--timeline{
+      width: 100%;
+    }
+  }
 }

@@ -18,4 +18,32 @@
     display: inline;
   }
 
+  @media (max-device-width : 1024px){
+    grid-area: 1 / 1 / 3 / 6 ;
+    margin-left: 10%;
+  }
+
 }
+
+@media (max-device-width : 420px){
+.title-top{
+  &--name{
+    font-size: 1em;
+  }
+}
+
+}
+// @media (max-device-width : 740px){
+//   .title-top{
+//     min-width: 10px;
+//     grid-area: 1 / 1 / 1 / 1; 
+//     margin: auto;
+
+//     &--name{
+//       font-size: 2em;
+//     }
+//     &--dev{
+//       font-size: 1em;
+//     }
+//   }
+// }

@@ -34,3 +34,16 @@
   }
 
 }
+
+@media (max-device-width : 1024px){
+  .aboutme{
+
+    &--img-container{
+      overflow-y: scroll;
+      justify-content: flex-start;
+      img{
+        width: 35vw;
+      }
+    }
+  }
+}

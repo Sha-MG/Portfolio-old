@@ -104,3 +104,16 @@
 
   }
 }}
+
+
+@media (max-device-width : 1024px){
+  .contact-container{
+    &--form{
+      width: 80vw;
+    }
+
+    .file{
+      width: 15vw;
+    }
+  }
+}

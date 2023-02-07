@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   &--left{
     padding: 10px;
   }
@@ -31,4 +31,13 @@
     background-repeat: no-repeat;
     color: inherit;
   }
+}
+
+@media (max-device-width : 425px){
+  .nav-element{
+      flex-direction: column;
+      &--links{
+        font-size: 1.5em;
+      }
+     }
 }

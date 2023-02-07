@@ -13,6 +13,9 @@ function MiniMe() {
   const parallax = useParallax({
     speed: -10,
   });
+  const parallaxtwoo = useParallax({
+    speed:20,
+  })
   const parallaxthree = useParallax({
     speed: -30,
   });
@@ -20,9 +23,10 @@ function MiniMe() {
 
   return (
     <div className='miniMe-container'>
-      <img  src={backgroundMiniMe} className='miniMe-container--image miniMe-container--image--background'/>
+
       <img ref={parallax.ref} src={backgroundDotMiniMe} className='miniMe-container--image miniMe-container--image--background'/>
       <img ref={parallaxthree.ref} src={backgroundDotThree} className='miniMe-container--image miniMe-container--image--background'/>
+      <img ref={parallaxtwoo.ref} src={backgroundMiniMe} className='miniMe-container--image miniMe-container--image--background'/>
       <img src={miniMePicture} className='miniMe-container--image miniMe-container--image--animation'/>
     </div>
   );

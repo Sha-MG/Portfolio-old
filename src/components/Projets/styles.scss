@@ -247,3 +247,23 @@
   background-position: center;
   background-size: 80%;
 }
+
+@media (max-device-width : 1024px){
+  .container-projets{
+
+    &--list{
+      flex-direction: column;
+
+    }
+    &--cardsboard{
+      &--card{
+        width: 70vw;
+        height: 60vh;
+        &__side{
+          width: 70vw;
+          height: 60vh;
+        }
+      }
+    }
+  }
+}

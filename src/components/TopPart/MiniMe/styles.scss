@@ -7,6 +7,7 @@
   grid-template-rows: 0.5fr repeat(2, 1fr);
   width: 600px;
   margin-left: 12vh;
+  z-index: -2;
 
   &--image{
     grid-area: 2 / 2 / 4 / 3;
@@ -20,5 +21,17 @@
     &--animation{
       margin-bottom: 0px;
     }
+  }
+}
+
+@media (max-device-width : 1024px){
+  .miniMe-container{
+    grid-area: 3 / 1 / 6 / 6 ;
+  }
+}
+
+@media (max-device-width : 425px){
+  .miniMe-container{
+    width: 200px;
   }
 }
