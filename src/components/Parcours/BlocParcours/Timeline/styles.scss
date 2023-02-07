@@ -116,3 +116,23 @@ label{
     }
   }
 }
+
+
+@media (max-device-width : 420px){
+  #timeline{
+    border-left: 5px solid v.$yellow;
+    padding:0;
+
+    label{
+      font-size: 1.1rem;
+    }
+
+    p{
+      font-size: 0.7rem;
+    }
+  }
+  .date{
+    left: -150px;
+    font-size: 0.8em;
+  }
+}

@@ -23,7 +23,29 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block",left:"-55px", transform: "scale(4)" }}
+      style={{ ...style, display: "block", left:"-55px", transform: "scale(4)" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SampleNextArrowLittle(props){
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", right:"-55px", transform: "scale(2)" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrowLittle(props){
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block",left:"-55px", transform: "scale(2)" }}
       onClick={onClick}
     />
   );
@@ -47,6 +69,8 @@ function CompSlider() {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 4,
+          nextArrow: <SampleNextArrowLittle />,
+          prevArrow: <SamplePrevArrowLittle />,
         }
       },
       {
@@ -54,6 +78,8 @@ function CompSlider() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          nextArrow: <SampleNextArrowLittle />,
+          prevArrow: <SamplePrevArrowLittle />,
         }
       },
     ]
