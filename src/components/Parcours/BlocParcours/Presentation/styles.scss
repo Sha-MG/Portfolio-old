@@ -161,14 +161,16 @@
 }
 
 @media (max-device-width : 420px){
-  .contactContainer{
-    margin-left: 0;
 
-    .wrapper{
-      margin-left: 0;
+  .BlocParcours-container--presentation{
+    .contactContainer{
+      .wrapper{
+        margin: 0;
+      }
+    }
+  
+    .button-cv{
+      margin: 0;
     }
   }
-  .button-cv{
-    margin-left: 0;
-  }
-  }
+}
