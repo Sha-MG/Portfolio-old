@@ -20,7 +20,7 @@ function IconesContact() {
         </a>
       </li>
       <li className="icon mail">
-        <a href="#">
+        <a href="#contact">
           <span className="tooltip">Email</span>
           <span><i className="fa-solid fa-envelope fa-xl"></i></span>
         </a>

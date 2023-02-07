@@ -12,6 +12,21 @@
     font-size: 1.1em;
     text-shadow: 3px 3px 3px v.$black;
   }
+
+  .button-cv{
+    background-color: v.$yellow;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 v.$black;
+    border: none;
+    padding: 10px;
+    margin: 30px 30%;
+    text-align: center;
+    transition: all 0.2s ease;
+    &:hover{
+      background-color: v.$dark-yellow;
+      box-shadow: 1px 1px 0 v.$black;
+    }
+  }
 }
 
 

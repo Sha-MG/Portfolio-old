@@ -1,0 +1,37 @@
+@use 'src/styles/vars' as v ;
+@import 'src/styles/vars' ;
+
+.footer {
+  margin: 0;
+  margin-top: 10vh;
+  width: 100%;
+  display: flex;
+  font-family: v.$global-font;
+  color: v.$white;
+
+  &--left{
+    width: 50%;
+    margin: 0;
+    background-color: v.$blue;
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  &--right{
+    width: 50%;
+    margin: 0;
+    background-color: v.$yellow;
+    padding: 30px;
+    p{
+      text-align: center;
+    }
+
+    .contactContainer{
+      margin-left:10%;
+    }
+
+    .icon{
+      color: v.$blue;
+    }
+  }
+}

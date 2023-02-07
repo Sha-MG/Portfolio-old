@@ -5,6 +5,7 @@ import Parcours from "../Parcours";
 import Projets from "../Projets";
 import AboutMe from "../AboutMe";
 import Contact from "../Contact";
+import Footer from "../Footer";
 
 // == Composant
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Projets/>
       <AboutMe/>
       <Contact/>
+      <Footer/>
     </>
 
   );
