@@ -1,6 +1,6 @@
 export default [
   {
-    name: 'O\'lock',
+    name: 'O\'Clock',
     date: 'Sept - Mars 23',
     description:' Formation de développeur web JavaScript. Socle Full Stack avec découverte de toutes les notions nécessaires au développement et à la documentation en JS. Spécialisation Réact qui m\'oriente Front-End.',
   },
