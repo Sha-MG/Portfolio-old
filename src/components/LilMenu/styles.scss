@@ -1,0 +1,56 @@
+@use 'src/styles/vars' as v ;
+@import 'src/styles/vars';
+
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: v.$black;
+  transition: 0.2s;
+
+  &-hover {
+    background: v.$grey;
+  }
+}
+
+.bm-cross {
+  background: v.$black;
+}
+
+.bm-menu {
+  background: v.$yellow;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.bm-morph-shape {
+  fill: v.$yellow;
+}
+
+.bm-item-list {
+  a{
+    color: v.$black;
+    padding: 0.5em 0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease !important;
+    -webkit-transition: all 0.3s ease;
+    justify-content: baseline;
+
+    &:hover {
+      background-color: transparent;
+      background-image: linear-gradient(rgba(v.$white, 0.7),rgba(v.$white, 0.7));
+      background-position: -0.3em 1.3em;
+      background-repeat: no-repeat;
+      color: inherit;
+    }
+  }
+
+}
+

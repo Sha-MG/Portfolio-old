@@ -6,13 +6,14 @@ import Projets from "../Projets";
 import AboutMe from "../AboutMe";
 import Contact from "../Contact";
 import Footer from "../Footer";
-
+import LilMenu from "../LilMenu/LilMenu";
 // == Composant
 function App() {
   return (
         
     <>
      <ParallaxProvider>
+     <LilMenu/>
         <TopPart/>
         <Parcours/>
       </ParallaxProvider>

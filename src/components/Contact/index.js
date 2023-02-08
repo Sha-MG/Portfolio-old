@@ -7,7 +7,6 @@ const Contact = () => {
   return (
 
     <div className='contact-container'>
-      <a href="#top" className='backUp backUp__contact'><i className="fa-solid fa-arrows-up-to-line fa-2xl"></i></a>
       <h2 id='contact'>Contact</h2>
 
       <form className='contact-container--form' action='https://getform.io/f/5e6367df-df86-46d2-b7f5-6f650bc44e8e' method='POST' encType="multipart/form-data">

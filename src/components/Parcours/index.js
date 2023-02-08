@@ -8,7 +8,6 @@ function Parcours() {
 
   return (
     <>
-      <a href="#top" className='backUp backUp__parcours'><i className="fa-solid fa-arrows-up-to-line fa-2xl"></i></a>
       <CompSlider/>
       <BlocParcours/>
     </>

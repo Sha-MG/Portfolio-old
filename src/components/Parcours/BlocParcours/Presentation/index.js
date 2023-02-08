@@ -7,8 +7,7 @@ function Presentation() {
   return (
 
     <>
-      <a href="#top" className='backUp'><i className="fa-solid fa-arrows-up-to-line fa-2xl"></i></a>
-      <div className='BlocParcours-container--presentation'>
+      <div className='BlocParcours-container--presentation' id='parcours'>
         <p>Salut, je m'appelle Morgane, <br/> </p>
         <p> <br/>Je suis officiellement <HoverBurst><strong>développeuse web & mobile</strong></HoverBurst> depuis quelques mois.</p>
         <p>J'ai un parcours plutôt <HoverBurst><strong>atypique</strong></HoverBurst>, qui m'a permis d'acquérir des connaissances dans des domaines très différents les uns des autres. </p>
