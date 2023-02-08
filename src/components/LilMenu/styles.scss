@@ -35,20 +35,32 @@
 
 .bm-item-list {
   a{
-    color: v.$black;
-    padding: 0.5em 0;
+    padding: 10px 30px;
     text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease !important;
-    -webkit-transition: all 0.3s ease;
-    justify-content: baseline;
+    color: v.$black;
+    display:inline-block; 
+    margin:0;
+    text-transform:uppercase;
 
-    &:hover {
-      background-color: transparent;
-      background-image: linear-gradient(rgba(v.$white, 0.7),rgba(v.$white, 0.7));
-      background-position: -0.3em 1.3em;
-      background-repeat: no-repeat;
-      color: inherit;
+    i{
+      margin-right: 10px;
+      transition: all 0.3s ease !important;
+    }
+
+    &:after {
+      display:block;
+      content: '';
+      border-bottom: solid 3px v.$white;  
+      transform: scaleX(0);  
+      transition: transform 250ms ease-in-out;
+    }
+
+    &:hover:after { 
+      transform: scaleX(1); 
+    }
+
+    &:hover i {
+      color: v.$white;
     }
   }
 

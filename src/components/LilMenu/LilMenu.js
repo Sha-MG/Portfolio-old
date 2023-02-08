@@ -6,11 +6,11 @@ const LilMenu = () => {
 
   return(
     <Menu>
-        <a className="menu-item" href="#top">Acceuil</a>
-        <a className="menu-item" href="#parcours">Parcours</a>
-        <a className="menu-item" href="#projets">Projets</a>
-        <a className="menu-item" href="#aboutMe">A propos</a>
-        <a className="menu-item" href="#contact">Contact</a>
+        <a className="menu-item" href="#top"><i className="fa-solid fa-house"></i> Acceuil</a>
+        <a className="menu-item" href="#parcours"><i class="fa-solid fa-road"></i> Parcours</a>
+        <a className="menu-item" href="#projets"><i class="fa-solid fa-diagram-project"></i> Projets</a>
+        <a className="menu-item" href="#aboutMe"><i class="fa-solid fa-palette"></i> A propos</a>
+        <a className="menu-item" href="#contact"><i class="fa-regular fa-paper-plane"></i> Contact</a>
     </Menu>
   )
 }
