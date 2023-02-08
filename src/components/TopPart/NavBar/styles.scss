@@ -14,14 +14,13 @@
   }
 
   &--links {
-    font-family: v.$global-font;
-    font-weight: 600;
+    font-weight: 500;
     color: v.$black;
     text-decoration: none;
     font-size: 2em;
     padding: 5px;
     margin-right: 20px;
-    transition: 0.5s;
+    transition: 0.3s ease;
   }
   
   &--links:hover {

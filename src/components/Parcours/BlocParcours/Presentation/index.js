@@ -4,19 +4,6 @@ import IconesContact from './IconesContact'
 import HoverBurst from './hoverBurst';
 // == Composant
 function Presentation() {
-
-  const onButtonClick = () => {
-    fetch('GAMORY+Morgane+CV.pdf').then(response => {
-        response.blob().then(blob => {
-            const fileURL = window.URL.createObjectURL(blob);
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'Gamory_Morgane_CV.pdf';
-            alink.click();
-        })
-    })
-}
-
   return (
 
     <>
@@ -30,9 +17,8 @@ function Presentation() {
         <br/><p><HoverBurst><strong>Apprendre</strong></HoverBurst> de nouvelles choses ne me fait pas peur, je dirai même que j'adore ça ! Je suis <HoverBurst><strong>curieuse</strong></HoverBurst>, et chaque petit problème est un challenge qui me donne envie de me dépasser pour le résoudre.</p>
         <p>Pour finir, la <HoverBurst><strong>créativité</strong></HoverBurst> est au centre de toutes mes activités professionnelles et personnelles. L'imagination et l'art sont des composantes essentielles de mon quotidien. </p>
         <p><br/>Si mon profil vous intéresse, que vous avez une question, ou même que vous voulez me dire deux mots sur votre artiste favori, n'hésitez pas à  me contacter ! </p>
-        <button className='button-cv' onClick={onButtonClick}>Télécharger mon CV</button>
-        <IconesContact/>
-
+      
+      <IconesContact/>
       </div>
     </>
   )

@@ -6,7 +6,8 @@ function TechnoList(techno) {
 
   return (
       <>
-      <li>{techno.techno}</li>
+      <p>{techno.techno}</p>
+      <span className='span-round'></span>
       </>
   );
 }

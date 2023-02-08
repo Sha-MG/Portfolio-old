@@ -1,15 +1,19 @@
 // Import
 import './styles.scss';
 import Presentation from './Presentation'
-import TImeline from './Timeline'
-
+import Timeline from './Timeline'
+import IconesContact from './Presentation/IconesContact';
 // == Composant
 function BlocParcours() {
   return (
+    <>
     <div className='BlocParcours-container'>
-      <Presentation/>
-      <TImeline/>
+      <div className='BlocParcours-container--div1'>
+        <Presentation/>
+        <Timeline/>
+      </div>
     </div>
+    </>
   );
 }
 

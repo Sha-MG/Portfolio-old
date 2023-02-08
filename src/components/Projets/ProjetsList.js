@@ -34,6 +34,7 @@ function ProjetsList({name, img, description, technos, github, lien, galerie}) {
           <div className="container-projets--cardsboard--card__details">
             <ul>
               <li>{description}</li>
+              <li className='technos'>
               {
                 technos.map((tec) => (
                   <TechnoList
@@ -42,6 +43,7 @@ function ProjetsList({name, img, description, technos, github, lien, galerie}) {
                   />
                 ))
                 }
+              </li> 
               <li className='container-projets--cardsboard--card__containerBouttonGalerie'>
                 <button onClick={() => setModalOpen(true)} className='container-projets--cardsboard--card__bouttonGalerie'>Galerie</button>
                 <a href={github} target='_blank' className='container-projets--cardsboard--card__bouttonGalerie'>Github</a>

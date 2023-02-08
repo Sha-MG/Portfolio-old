@@ -12,7 +12,7 @@ function NavBar() {
       <div className='nav-element--right'>
         <a href='#timeline' className='nav-element--links'>Parcours</a>
         <a href='#projets' className='nav-element--links'>Projets</a>
-        <a href='#aboutMe' className='nav-element--links'>About</a>
+        <a href='#aboutMe' className='nav-element--links'>A propos</a>
         <a href='#contact' className='nav-element--links'>Contact</a>
       </div>
     </div>

@@ -3,10 +3,25 @@ import './styles.scss';
 
 // == Composant
 function IconesContact() {  
+
+  const onButtonClick = () => {
+    fetch('GAMORY+Morgane+CV.pdf').then(response => {
+        response.blob().then(blob => {
+            const fileURL = window.URL.createObjectURL(blob);
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'Gamory_Morgane_CV.pdf';
+            alink.click();
+        })
+    })
+}
+
+
   return(
     
   <div className='contactContainer'>
     <ul className="wrapper">
+    <div className='button-cv' onClick={onButtonClick}> Télécharger mon CV </div>
       <li className="icon linkedin">
         <a href="https://www.linkedin.com/in/morgane-gamory" target="_blank">
           <span className="tooltip">LinkedIn</span>

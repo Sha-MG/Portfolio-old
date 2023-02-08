@@ -29,7 +29,7 @@ const Contact = () => {
       <div className="contact-container--form--item contact-container--form--item-textarea">
         <br/>
         <textarea type="text" name='message' className="inputText" required rows="10" cols="10"/>
-        <span className="floating-label">Message</span>
+        <span className="floating-label">Message...</span>
       </div>
       <div className="contact-container--form--item contact-container--form--item-file">
         <label className="file">

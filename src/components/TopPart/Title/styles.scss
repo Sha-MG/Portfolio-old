@@ -1,4 +1,5 @@
 @use 'src/styles/vars' as v ;
+@import 'src/styles/vars';
 
 .title-top{
   grid-area: 1 / 3 / 6 / 6; 
@@ -7,7 +8,7 @@
   margin:auto;
   
   &--name{
-    font-size: 5rem;
+    @include hugeTitle;
     color: v.$blue;
   }
 
