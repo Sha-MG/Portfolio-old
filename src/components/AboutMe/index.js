@@ -9,7 +9,7 @@ const AboutMe = () => {
 
   return (
     <div className='aboutme--container'>
-      <h2 id='aboutMe'>A propos de moi</h2>
+      <h2 id='aboutMe'>A propos</h2>
       <div className='aboutme--img-container'>
         <img src={dog}/>
         <img src={ordi}/>
