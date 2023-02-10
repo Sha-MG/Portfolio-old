@@ -12,16 +12,15 @@ function Title() {
   React.useEffect(() => {
     const options = {
     	strings: [
-        ' Junior',
-        ' Apprentie',
-        ' FrontEnd',
-        ' Padawan',
-        ' En devenir',
-        ' Passionnée',
-        ' FullStack',
-        ' Bientôt Pro',
-        ' En recherche de Stage',
-        ' Motivée',
+        ' junior',
+        ' frontEnd',
+        ' padawan',
+        ' passionnée',
+        ' fullStack',
+        ' en recherche de Stage',
+        ' motivée',
+        ' react',
+        ' créative'
       ],
       typeSpeed: 40,
       backSpeed: 90,

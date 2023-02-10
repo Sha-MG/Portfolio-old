@@ -18,7 +18,6 @@ const AboutMe = () => {
         <img src={unicorn}/>
       </div>
     </div>
-
   )
 }
 

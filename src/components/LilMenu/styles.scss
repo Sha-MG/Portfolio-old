@@ -2,38 +2,42 @@
 @import 'src/styles/vars';
 
 
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
-}
+.bm{
+  &-burger{
+    
+    &-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
 
-.bm-burger-bars {
-  background: v.$black;
-  transition: 0.2s;
-
-  &-hover {
-    background: v.$grey;
+  &-bars {
+    background: v.$black;
+    transition: 0.2s;
+  
+    &-hover {
+      background: v.$grey;
+    }
   }
 }
 
-.bm-cross {
+&-cross {
   background: v.$black;
 }
 
-.bm-menu {
+&-menu {
   background: v.$yellow;
   padding: 10px;
   font-size: 1.5em;
 }
 
-.bm-morph-shape {
+&-morph-shape {
   fill: v.$yellow;
 }
 
-.bm-item-list {
+&-item-list {
   a{
     padding: 10px 30px;
     text-decoration: none;
@@ -64,5 +68,6 @@
     }
   }
 
-}
 
+}
+}
