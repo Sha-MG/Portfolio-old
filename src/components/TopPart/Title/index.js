@@ -12,7 +12,6 @@ function Title() {
   React.useEffect(() => {
     const options = {
     	strings: [
-        ' Junior',
         ' FrontEnd',
         ' Padawan',
         ' Passionnée',
